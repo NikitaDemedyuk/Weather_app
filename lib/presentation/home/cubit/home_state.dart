@@ -2,6 +2,8 @@ import 'package:equatable/equatable.dart';
 
 import '../models/home_tab.dart';
 
+const List<HomeTab> kTabs = HomeTab.values;
+
 class HomeState extends Equatable {
   const HomeState({
     required this.tab,

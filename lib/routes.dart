@@ -3,17 +3,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:weather_app/injection.dart';
 import 'package:weather_app/presentation/home/pages/home_page.dart';
-import 'package:weather_app/presentation/weekly_forecast/pages/weekly_forecast.dart';
 
 import 'presentation/home/cubit/home_cubit.dart';
-import 'presentation/today_forecast/cubit/today_forecast_cubit.dart';
-import 'presentation/today_forecast/pages/today_forecast.dart';
-import 'presentation/weekly_forecast/cubit/weekly_forecast_cubit.dart';
 
 enum AppRoutes {
-  home('/'),
-  todayForecast('/today_forecast'),
-  weeklyForecast('/weekly_forecast');
+  home('/');
 
   final String route;
 

@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_app/injection.dart';
-import 'package:weather_app/presentation/home/pages/home_page.dart';
 import 'package:weather_app/routes.dart';
 
 import 'presentation/home/cubit/home_cubit.dart';
@@ -49,18 +48,7 @@ class _AppViewState extends State<AppView> {
       debugShowCheckedModeBanner: false,
       title: 'Weather app!',
       restorationScopeId: 'weather_app',
-      // theme: CupertinoThemeData(
-      //   brightness: Brightness.light,
-      //   primaryColor: CupertinoColors.systemPurple,
-      //   primaryContrastingColor: CupertinoColors.activeGreen,
-      //   scaffoldBackgroundColor: CupertinoColors.white,
-      //   //barBackgroundColor: primaryColor,
-      // ),
-      color: CupertinoColors.systemPurple,
-      //supportedLocales: supportedLocales,
-      //locale: initialLocale,
-      // builder: (context, child) => const HomePage(),
-      //builder: (_, child) => (),
+      color: CupertinoColors.systemBlue,
     );
   }
 }

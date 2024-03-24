@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../cubit/home_cubit.dart';
+import '../cubit/home_state.dart';
 import '../widgets/navigation_bar_items.dart';
 import 'selected_page.dart';
 
@@ -26,6 +27,10 @@ class HomePageView extends StatelessWidget {
           TodayForecastNavigationBarItem(),
           WeeklyForecastNavigationBarItem(),
         ],
+        onTap: (index) {
+          final newTab = kTabs[index];
+          context.read<HomeCubit>().setTab(newTab);
+        },
       ),
       tabBuilder: (_, index) => CupertinoTabView(
         //navigatorKey: context.read<HomeCubit>().getTabNavigatorKey(index),
