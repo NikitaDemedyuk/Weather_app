@@ -55,7 +55,7 @@ class _WeeklyForecastViewState extends State<WeeklyForecastView> {
       appBar: AppBar(
         title: const Text('Today'),
       ),
-      body: SafeArea(
+      body: const SafeArea(
         child: WeeklyForecastBody(),
       ),
     );
