@@ -33,7 +33,6 @@ class HomePageView extends StatelessWidget {
         },
       ),
       tabBuilder: (_, index) => CupertinoTabView(
-        //navigatorKey: context.read<HomeCubit>().getTabNavigatorKey(index),
         builder: (_) => SelectedPage(tab: selectedTab),
       ),
     );

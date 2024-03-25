@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_app/injection.dart';
@@ -48,7 +47,7 @@ class _AppViewState extends State<AppView> {
       debugShowCheckedModeBanner: false,
       title: 'Weather app!',
       restorationScopeId: 'weather_app',
-      color: CupertinoColors.systemBlue,
+      color: Colors.blue,
     );
   }
 }
